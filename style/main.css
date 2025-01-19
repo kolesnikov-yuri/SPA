@@ -46,13 +46,13 @@ table {
 
 body {
     margin: 0;
-    height: 100vh; /* Задает высоту body на весь экран */
+    /* height: 100vh; */
     
 }
 
 .container {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 60px;
@@ -88,19 +88,78 @@ body {
 }
 
 .thumb {
-    flex: 1 1 400px; /* Позволяет карточкам сжиматься до 400px и расширяться до 100% */
-    max-width: 700px; /* Максимальная ширина карточки */
-    height: calc(400px * (3 / 4)); /* Пропорциональная высота (например, 3:4) */
+    flex: 1 1 400px; 
+    max-width: 700px; 
+    height: calc(400px * (3 / 4));
     box-sizing: border-box; 
     cursor: pointer;
-    width: 100%; /* Заполняет всю ширину контейнера */
-    overflow: hidden; /* Скрывает часть изображения, выходящую за пределы контейнера */
+    width: 100%; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column; /* Вертикальное выравнивание */
+    justify-content: flex-end;
+    padding-bottom: 8px;
 }
 
-.thumb img {
-    width: 100%; /* Заполняет всю ширину родительского контейнера */
-    height: 100%; /* Заполняет всю высоту родительского контейнера */
-    object-fit: cover; /* Масштабирует изображение, сохраняя пропорции */
+.thumb_1 {
+    background: url('../images/thumbs/01.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.thumb_2 {
+    background: url('../images/thumbs/02.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.thumb_3 {
+    background: url('../images/thumbs/03.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.thumb_4 {
+    background: url('../images/thumbs/04.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.thumb_5 {
+    background: url('../images/thumbs/05.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.thumb_6 {
+    background: url('../images/thumbs/06.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.thumb_7 {
+    background: url('../images/thumbs/07.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.thumb_8 {
+    background: url('../images/thumbs/08.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.thumb_9 {
+    background: url('../images/thumbs/09.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.thumb_10 {
+    background: url('../images/thumbs/10.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.thumb_11 {
+    background: url('../images/thumbs/11.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.thumb_12 {
+    background: url('../images/thumbs/12.jpg');
+    background-size: cover; 
+    background-position: center; 
 }
 
 .popup-content {
@@ -109,7 +168,32 @@ body {
     left: 10%;
     padding: 20px;
     width: 80%;
-    display: none;
+    display: none; /*/////////////////////////////////////*/
 }
 
+.icon-container{
+    display: flex;
+    justify-content: center;
+}
 
+.like-icon{
+    width: 35px;
+    height: 35px;
+    border: white 3px solid;
+    margin-right: 10px;
+}
+
+.like-icon:hover{
+    background: #f40509b2;
+}
+ 
+.dislike-icon{
+    width: 40px;
+    height: 40px;
+    background: #822a078e;
+    margin-left: 10px;
+}
+
+.liked {
+    background: #f40509b2; /* Цвет, который будет применяться при активации */
+}
