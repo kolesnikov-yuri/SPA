@@ -162,15 +162,6 @@ body {
     background-position: center; 
 }
 
-.popup-content {
-    position: absolute;
-    top: 5%;
-    left: 10%;
-    padding: 20px;
-    width: 80%;
-    display: none; /*/////////////////////////////////////*/
-}
-
 .icon-container{
     display: flex;
     justify-content: center;
@@ -197,3 +188,28 @@ body {
 .liked {
     background: #f40509b2; /* Цвет, который будет применяться при активации */
 }
+
+.popup-content {
+    position: absolute;
+    background: url('../images/fulls/01.jpg');
+    background-size: cover; 
+    background-position: center; 
+    top: 10%;
+    left: 10%;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    display: none; /*/////////////////////////////////////*/
+    flex-direction: row-reverse;
+}
+
+.close{
+    width: 30px;
+    height: 30px;
+    background-color: #0c010100;
+    border: #fff 2px solid;
+    cursor: pointer;
+}
+
+
+
